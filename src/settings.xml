@@ -1,0 +1,7 @@
+<settings>
+	<amountWriteThreads>3</amountWriteThreads>
+	<amountReadThreads>5</amountReadThreads>
+	<writeSpeed>1000</writeSpeed>
+	<readSpeed>1000</readSpeed>
+	<bufferSize>2</bufferSize>
+</settings>
