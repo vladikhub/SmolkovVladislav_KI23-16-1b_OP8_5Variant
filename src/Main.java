@@ -91,7 +91,7 @@ public class Main {
    * Метод для ввода данных вручную
    */
   public static void inputData() {
-    System.out.println("Введите количество поток для записи: ");
+    System.out.println("Введите количество потоков для записи: ");
     try {
       amountWriteThreads = sc.nextInt();
       if (amountWriteThreads < 1) {
@@ -99,11 +99,12 @@ public class Main {
       }
     } catch (InputMismatchException ex) {
       System.out.println("Неправильный ввод. Введите число еще раз ( >= 0 и <= 2 147 483 647):");
+      sc.nextLine();
       amountWriteThreads = sc.nextInt();
     }
     sc.nextLine();
 
-    System.out.println("Введите количество поток для чтения: ");
+    System.out.println("Введите количество потоков для чтения: ");
     try {
       amountReadThreads = sc.nextInt();
       if (amountReadThreads < 1) {
@@ -111,6 +112,7 @@ public class Main {
       }
     } catch (InputMismatchException ex) {
       System.out.println("Неправильный ввод. Введите число еще раз ( >= 0 и <= 2 147 483 647):");
+      sc.nextLine();
       amountReadThreads = sc.nextInt();
     }
     sc.nextLine();
@@ -123,6 +125,7 @@ public class Main {
       }
     } catch (InputMismatchException ex) {
       System.out.println("Неправильный ввод. Введите число еще раз ( >= 1000 и <= 2 147 483 647):");
+      sc.nextLine();
       writeSpeed = sc.nextInt();
     }
     sc.nextLine();
@@ -135,6 +138,7 @@ public class Main {
       }
     } catch (InputMismatchException ex) {
       System.out.println("Неправильный ввод. Введите число еще раз ( >= 1000 и <= 2 147 483 647):");
+      sc.nextLine();
       readSpeed = sc.nextInt();
     }
     sc.nextLine();
@@ -147,6 +151,7 @@ public class Main {
       }
     } catch (InputMismatchException ex) {
       System.out.println("Неправильный ввод. Введите число еще раз ( > 0 и <= 2 147 483 647):");
+      sc.nextLine();
       bufferSize = sc.nextInt();
     }
     sc.nextLine();
